@@ -13,14 +13,13 @@ int main(){
 	return 0;
 }
 int fact(int b){
-	int f,i;
-	f=1;
-	i=2;
-	while(i!=b+1){
-		f=f*i;
-		i=i+1;
+	if(b==0){
+	 b=1;
 	}
-	return f;
+	else{
+		b=b*fact(b-1);
+	}
+	return b;
 }
 float suma(float a){
 	float s,i;
