@@ -10,22 +10,30 @@ int main(){
 	switch(opc){
 		case '+': {
 			r=opc1+opc2;
+			cout<<"el resultado es:\n"<<r;
 			break;
 		}
 		case '-': {
 			r=opc1-opc2;
+			cout<<"el resultado es:\n"<<r;
 			break;
 		}
 		case '*': {
 			r=opc1*opc2;
+			cout<<"el resultado es:\n"<<r;
 			break;
 		}
 		case '/': {
-			r=opc1/opc2;	
+			if(opc2!=0){
+				r=opc1/opc2;
+				cout<<"el resultado es:\n"<<r;
+			}
+			else{
+				cout<<"el divisor no puede ser 0\n";
+			}	
 			}
 			break;
 		}
-	cout<<"el resultado es:\n"<<r;
 	
 	return 0;
 }
